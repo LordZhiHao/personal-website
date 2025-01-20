@@ -4,14 +4,14 @@ const Data = () => {
   return (
     <div className="home_data">
       <h1 className="home_title">
-        <strong>(Jason) Zhi Hao</strong> Lo
+        <strong>Jason</strong> Lo
         <svg
           width="36"
           height="36"
           viewBox="0 0 48 48"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          class="home__hand">
+          className="home__hand">
           <path
             d="M25.4995 32.0305L31.3495 33.1555L36.1495 8.48051C36.4495 6.83051 35.3995 5.18051 33.8245 4.88051C32.1745 4.58051 30.5995 5.70551 30.2995 7.35551L25.4995 32.0305Z"
             fill="#FFDD67"></path>
@@ -48,14 +48,13 @@ const Data = () => {
       <h3 className="home_subtitle">Aspiring Data Scientist</h3>
       <p className="home_description">
         Aspiring data scientist with a passion for uncovering insights through
-        machine learning and analytics. Skilled in transforming data into
-        impactful solutions to drive innovation and better decision-making.
+        machine learning and analytics.
       </p>
 
       <a href="#contact" className="button button--flex">
         Say Hello!
         <svg
-          class="button__icon"
+          className="button__icon"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"

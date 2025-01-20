@@ -39,26 +39,27 @@ const Services = () => {
                 className="uil uil-x services__modal-close"></i>
               <h3 className="services__modal-title">Developer</h3>
               <p className="services__modal-description">
-                Over 3 years of experience in web development providing quality
-                work.
+                Over 1 yeaer of experience in providing detailed insights and
+                analysis for decision-making.
               </p>
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
                   <i class="uil uil-lightbulb services__modal-icon"></i>
                   <p className="services__modal-info">
-                    Web page and app development
+                    Delivering Real-Time Data Analytics & Visualization
+                    Solutions
                   </p>
                 </li>
                 <li className="services__modal-service">
                   <i class="uil uil-lightbulb services__modal-icon"></i>
                   <p className="services__modal-info">
-                    Integrate creative colloboration
+                    Developing Data Delivery & Reporting Pipeline
                   </p>
                 </li>
                 <li className="services__modal-service">
                   <i class="uil uil-lightbulb services__modal-icon"></i>
                   <p className="services__modal-info">
-                    Provide product mockups
+                    Providing Statistical & Econometrics Analysis for Insights
                   </p>
                 </li>
               </ul>
@@ -91,26 +92,27 @@ const Services = () => {
                 className="uil uil-x services__modal-close"></i>
               <h3 className="services__modal-title">Designer</h3>
               <p className="services__modal-description">
-                Over 2 years of experience in UI/UX design providing quality
-                work.
+                Over 1 year of experience in delivering data science solutions
+                with a pecialization in Machine Learning and Analytics.
               </p>
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
                   <i class="uil uil-lightbulb services__modal-icon"></i>
                   <p className="services__modal-info">
-                    Create a user friendly interface
+                    Training Machine Learning Models for Predictive Analytics
                   </p>
                 </li>
                 <li className="services__modal-service">
                   <i class="uil uil-lightbulb services__modal-icon"></i>
                   <p className="services__modal-info">
-                    Develop with a minimal approach
+                    Developing Computer Vision Solutions for Automated Pipelines
                   </p>
                 </li>
                 <li className="services__modal-service">
                   <i class="uil uil-lightbulb services__modal-icon"></i>
                   <p className="services__modal-info">
-                    Design with accessibility in mind
+                    Applying Time Series Forecasting for Demand/Supply
+                    Forecasting
                   </p>
                 </li>
               </ul>
@@ -143,24 +145,28 @@ const Services = () => {
                 className="uil uil-x services__modal-close"></i>
               <h3 className="services__modal-title">Branding</h3>
               <p className="services__modal-description">
-                Over 3 years experience in branding providing quality work.
+                Background in Computing Degree with multiple project experiences
+                in Web Development.
               </p>
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
                   <i class="uil uil-lightbulb services__modal-icon"></i>
                   <p className="services__modal-info">
-                    Company logo and branding
+                    Front-End Development with Vue.js & React.js Frameworks
                   </p>
                 </li>
                 <li className="services__modal-service">
                   <i class="uil uil-lightbulb services__modal-icon"></i>
                   <p className="services__modal-info">
-                    Custom website and landing page
+                    Schema Design and Implementation with MySQL & PostGreSQL
                   </p>
                 </li>
                 <li className="services__modal-service">
                   <i class="uil uil-lightbulb services__modal-icon"></i>
-                  <p className="services__modal-info">Design product mockups</p>
+                  <p className="services__modal-info">
+                    Web Application Development with Retriver Augmented
+                    Generation AI Solutions Integration
+                  </p>
                 </li>
               </ul>
             </div>

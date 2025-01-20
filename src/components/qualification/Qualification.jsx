@@ -124,62 +124,85 @@ const Qualification = () => {
                 : "qualification__content"
             }>
             <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">Tech Support</h3>
-                <span className="qualification__subtitle">PC Outlet</span>
-                <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt qualification__calendar-icon"></i>
-                  2012-2015
-                </div>
-              </div>
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-            </div>
-            <div className="qualification__data">
               <div></div>
               <div>
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
               </div>
               <div>
-                <h3 className="qualification__title">Junior Developer</h3>
-                <span className="qualification__subtitle">Discord</span>
-                <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt qualification__calendar-icon"></i>
-                  2015-2016
-                </div>
-              </div>
-            </div>
-            <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">UX Designer</h3>
-                <span className="qualification__subtitle">Apple Inc</span>
-                <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt qualification__calendar-icon"></i>
-                  2016-2022
-                </div>
-              </div>
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-            </div>
-            <div className="qualification__data">
-              <div></div>
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
-              <div>
-                <h3 className="qualification__title">Senior Developer</h3>
+                <h3 className="qualification__title">
+                  AI Software Engineer Intern
+                </h3>
                 <span className="qualification__subtitle">
-                  Freelance - Remote
+                  Wholly Greens Pte. Ltd.
                 </span>
                 <div className="qualification__calendar">
                   <i className="uil uil-calendar-alt qualification__calendar-icon"></i>
-                  2019-Present
+                  Jan 2024 - Jun 2024
+                </div>
+              </div>
+            </div>
+            <div className="qualification__data">
+              <div>
+                <h3 className="qualification__title">Data Analyst Intern</h3>
+                <span className="qualification__subtitle">
+                  Azure Tide Holdings Pte. Ltd.
+                </span>
+                <div className="qualification__calendar">
+                  <i className="uil uil-calendar-alt qualification__calendar-icon"></i>
+                  Aug 2024 - Jan 2025
+                </div>
+              </div>
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+            </div>
+            <div className="qualification__data">
+              <div></div>
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+              <div>
+                <h3 className="qualification__title">Data Analytics Intern</h3>
+                <span className="qualification__subtitle">Continental AG</span>
+                <div className="qualification__calendar">
+                  <i className="uil uil-calendar-alt qualification__calendar-icon"></i>
+                  Jan 2024 - Jun 2024
+                </div>
+              </div>
+            </div>
+            <div className="qualification__data">
+              <div>
+                <h3 className="qualification__title">Data Science Intern</h3>
+                <span className="qualification__subtitle">
+                  Jurong Town Corporation (JTC)
+                </span>
+                <div className="qualification__calendar">
+                  <i className="uil uil-calendar-alt qualification__calendar-icon"></i>
+                  May 2023 - Aug 2023
+                </div>
+              </div>
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+            </div>
+            <div className="qualification__data">
+              <div></div>
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+              <div>
+                <h3 className="qualification__title">Teaching Assistant</h3>
+                <span className="qualification__subtitle">
+                  National University of Singapore
+                </span>
+                <div className="qualification__calendar">
+                  <i className="uil uil-calendar-alt qualification__calendar-icon"></i>
+                  Jan 2023 - Dec 2023
                 </div>
               </div>
             </div>

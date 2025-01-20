@@ -47,8 +47,8 @@ const Data = () => {
 
       <h3 className="home_subtitle">Aspiring Data Scientist</h3>
       <p className="home_description">
-        Aspiring data scientist with a passion for uncovering insights through
-        machine learning and analytics.
+        Hola, mucho gusto! I am Zhi Hao, an aspiring Data Scientist who is
+        passionate about machine learning and AI.
       </p>
 
       <a href="#contact" className="button button--flex">

@@ -45,14 +45,35 @@ const Qualification = () => {
                 : "qualification__content"
             }>
             <div className="qualification__data">
+              <div></div>
               <div>
-                <h3 className="qualification__title">Design</h3>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+              <div>
+                <h3 className="qualification__title">
+                  AI & Software Engineer Apprentice
+                </h3>
                 <span className="qualification__subtitle">
-                  The Art Institute
+                  Gamuda AI Academy
                 </span>
                 <div className="qualification__calendar">
                   <i className="uil uil-calendar-alt qualification__calendar-icon"></i>
-                  2016-2018
+                  Jan 2025 - Mar 2025
+                </div>
+              </div>
+            </div>
+            <div className="qualification__data">
+              <div>
+                <h3 className="qualification__title">
+                  Business Analytics Undergraduate
+                </h3>
+                <span className="qualification__subtitle">
+                  National University of Singapore (NUS)
+                </span>
+                <div className="qualification__calendar">
+                  <i className="uil uil-calendar-alt qualification__calendar-icon"></i>
+                  Aug 2021 - Dec 2025
                 </div>
               </div>
               <div>
@@ -67,23 +88,27 @@ const Qualification = () => {
                 <span className="qualification__line"></span>
               </div>
               <div>
-                <h3 className="qualification__title">Web Development</h3>
+                <h3 className="qualification__title">
+                  Data Analysis & Big Data Analytics
+                </h3>
                 <span className="qualification__subtitle">
-                  Full Sail University
+                  University College London (UCL)
                 </span>
                 <div className="qualification__calendar">
                   <i className="uil uil-calendar-alt qualification__calendar-icon"></i>
-                  2018-2021
+                  May 2024 - Aug 2024
                 </div>
               </div>
             </div>
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">UI/UX Design</h3>
-                <span className="qualification__subtitle">UX Academy</span>
+                <h3 className="qualification__title">High School Diploma</h3>
+                <span className="qualification__subtitle">
+                  Chung Ling Private High School
+                </span>
                 <div className="qualification__calendar">
                   <i className="uil uil-calendar-alt qualification__calendar-icon"></i>
-                  2021-2022
+                  Jan 2015 - Dec 2020
                 </div>
               </div>
               <div>

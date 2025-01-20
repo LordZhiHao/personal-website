@@ -15,9 +15,9 @@ const About = () => {
           <Info />
           <p className="about__description">
             Aspiring data scientist with a passion for uncovering insights
-            through machine learning and analytics. With my machine learning and
-            analytics skills, I aspire to transform data into impactful
-            solutions to drive innovation and better decision-making.
+            through machine learning and analytics. I aspire to transform data
+            into impactful solutions to drive innovation and better
+            decision-making.
           </p>
           <a download="" href={CV} className="button button--flex">
             Download CV

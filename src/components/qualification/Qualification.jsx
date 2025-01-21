@@ -3,9 +3,14 @@ import "./qualification.css";
 
 const Qualification = () => {
   const [toggleState, setToggleState] = useState(1);
+  const [modalState, setModalState] = useState(null);
 
   const toggleTab = (index) => {
     setToggleState(index);
+  };
+
+  const toggleModal = (modalId) => {
+    setModalState(modalId === modalState ? null : modalId);
   };
 
   return (
@@ -50,7 +55,9 @@ const Qualification = () => {
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
               </div>
-              <div>
+              <div
+                onClick={() => toggleModal("ai_apprentice")}
+                className="qualification__content-clickable">
                 <h3 className="qualification__title">
                   AI & Software Engineer Apprentice
                 </h3>
@@ -60,6 +67,36 @@ const Qualification = () => {
                 <div className="qualification__calendar">
                   <i className="uil uil-calendar-alt qualification__calendar-icon"></i>
                   Jan 2025 - Mar 2025
+                </div>
+              </div>
+
+              {/* Modal */}
+              <div
+                className={
+                  modalState === "ai_apprentice"
+                    ? "qualification__modal active-modal"
+                    : "qualification__modal"
+                }>
+                <div className="qualification__modal-content">
+                  <i
+                    onClick={() => toggleModal(null)}
+                    className="uil uil-x qualification__modal-close"></i>
+                  <h3 className="qualification__modal-title">
+                    AI & Software Engineer Apprentice
+                  </h3>
+                  <p className="qualification__modal-description">
+                    Details about the apprenticeship program at Gamuda AI
+                    Academy
+                  </p>
+                  <ul className="qualification__modal-details grid">
+                    <li className="qualification__modal-detail">
+                      <i className="uil uil-check-circle qualification__modal-icon"></i>
+                      <p className="qualification__modal-info">
+                        Developed AI solutions for real-world problems
+                      </p>
+                    </li>
+                    {/* Add more details as needed */}
+                  </ul>
                 </div>
               </div>
             </div>

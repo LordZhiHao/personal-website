@@ -39,8 +39,8 @@ const DataScience = () => {
           <div className="skills__data">
             <i class="uil uil-arrow"></i>
             <div>
-              <h3 className="skills__name">A/B Testing</h3>
-              <span className="skills__level">Basic</span>
+              <h3 className="skills__name">Classification & Regression</h3>
+              <span className="skills__level">Intermediate</span>
             </div>
           </div>
           <div className="skills__data">

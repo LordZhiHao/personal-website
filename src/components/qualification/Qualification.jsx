@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import "./qualification.css";
+import NUSLogo from "../../assets/NUS-logo.png";
+import Gamuda from "../../assets/gamuda.png";
+import UCLLogo from "../../assets/ucl.png";
+import ChungLing from "../../assets/chungling.png";
 
 const Qualification = () => {
   const [toggleState, setToggleState] = useState(1);
@@ -49,6 +53,7 @@ const Qualification = () => {
                 ? "qualification__content qualification__content-active"
                 : "qualification__content"
             }>
+            {/* a qualification_data component - right */}
             <div className="qualification__data">
               <div></div>
               <div>
@@ -56,7 +61,7 @@ const Qualification = () => {
                 <span className="qualification__line"></span>
               </div>
               <div
-                onClick={() => toggleModal("ai_apprentice")}
+                onClick={() => toggleModal("gamuda")}
                 className="qualification__content-clickable">
                 <h3 className="qualification__title">
                   AI & Software Engineer Apprentice
@@ -73,7 +78,7 @@ const Qualification = () => {
               {/* Modal */}
               <div
                 className={
-                  modalState === "ai_apprentice"
+                  modalState === "gamuda"
                     ? "qualification__modal active-modal"
                     : "qualification__modal"
                 }>
@@ -81,9 +86,18 @@ const Qualification = () => {
                   <i
                     onClick={() => toggleModal(null)}
                     className="uil uil-x qualification__modal-close"></i>
-                  <h3 className="qualification__modal-title">
-                    AI & Software Engineer Apprentice
-                  </h3>
+
+                  <div className="modal__header">
+                    <img
+                      src={Gamuda} // Replace with your logo path
+                      alt="Gamuda AI Academy Logo"
+                      className="company__logo"
+                    />
+                    <h3 className="qualification__modal-title">
+                      AI & Software Engineer Apprentice
+                    </h3>
+                  </div>
+
                   <p className="qualification__modal-description">
                     Details about the apprenticeship program at Gamuda AI
                     Academy
@@ -100,10 +114,14 @@ const Qualification = () => {
                 </div>
               </div>
             </div>
+
+            {/* a qualification_data component - left*/}
             <div className="qualification__data">
-              <div>
+              <div
+                onClick={() => toggleModal("nus_bza")}
+                className="qualification__content-clickable">
                 <h3 className="qualification__title">
-                  Business Analytics Undergraduate
+                  BSc in Business Analytics
                 </h3>
                 <span className="qualification__subtitle">
                   National University of Singapore (NUS)
@@ -118,13 +136,69 @@ const Qualification = () => {
                 <span className="qualification__line"></span>
               </div>
             </div>
+
+            {/* Modal */}
+            <div
+              className={
+                modalState === "nus_bza"
+                  ? "qualification__modal active-modal"
+                  : "qualification__modal"
+              }>
+              <div className="qualification__modal-content">
+                <i
+                  onClick={() => toggleModal(null)}
+                  className="uil uil-x qualification__modal-close"></i>
+
+                <div className="modal__header">
+                  <img
+                    src={NUSLogo} // Replace with your logo path
+                    alt="Gamuda AI Academy Logo"
+                    className="company__logo"
+                  />
+                  <h3 className="qualification__modal-title">
+                    BSc in Business Analytics
+                  </h3>
+                </div>
+
+                <p className="qualification__modal-description">
+                  National University of Singapore (NUS)
+                </p>
+                <ul className="qualification__modal-details grid">
+                  <li className="qualification__modal-detail">
+                    <i className="uil uil-check-circle qualification__modal-icon"></i>
+                    <p className="qualification__modal-info">
+                      Academics: Second Major in Economics & Specialized in
+                      Machine Learning-based Analytics
+                    </p>
+                  </li>
+                  <li className="qualification__modal-detail">
+                    <i className="uil uil-check-circle qualification__modal-icon"></i>
+                    <p className="qualification__modal-info">
+                      Awards: Certificate of Distinction in Analytics Techniques
+                      Knowledge Area, Financial Analytics Specialisation &
+                      Machine Learning Analytics Specialisation, ASEAN
+                      Undergraduate Scholarships
+                    </p>
+                  </li>
+                  <li className="qualification__modal-detail">
+                    <i className="uil uil-check-circle qualification__modal-icon"></i>
+                    <p className="qualification__modal-info">CAP: 4.33/5.0</p>
+                  </li>
+                  {/* Add more details as needed */}
+                </ul>
+              </div>
+            </div>
+
+            {/* a qualification_data component - right */}
             <div className="qualification__data">
               <div></div>
               <div>
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
               </div>
-              <div>
+              <div
+                onClick={() => toggleModal("ucl")}
+                className="qualification__content-clickable">
                 <h3 className="qualification__title">
                   Data Analysis & Big Data Analytics
                 </h3>
@@ -136,10 +210,55 @@ const Qualification = () => {
                   May 2024 - Aug 2024
                 </div>
               </div>
+
+              {/* Modal */}
+              <div
+                className={
+                  modalState === "ucl"
+                    ? "qualification__modal active-modal"
+                    : "qualification__modal"
+                }>
+                <div className="qualification__modal-content">
+                  <i
+                    onClick={() => toggleModal(null)}
+                    className="uil uil-x qualification__modal-close"></i>
+
+                  <div className="modal__header">
+                    <img
+                      src={UCLLogo} // Replace with your logo path
+                      alt="Gamuda AI Academy Logo"
+                      className="company__logo"
+                    />
+                    <h3 className="qualification__modal-title">
+                      Data Analysis & Big Data Analytics
+                    </h3>
+                  </div>
+
+                  <p className="qualification__modal-description">
+                    Details about the apprenticeship program at Gamuda AI
+                    Academy
+                  </p>
+                  <ul className="qualification__modal-details grid">
+                    <li className="qualification__modal-detail">
+                      <i className="uil uil-check-circle qualification__modal-icon"></i>
+                      <p className="qualification__modal-info">
+                        Developed AI solutions for real-world problems
+                      </p>
+                    </li>
+                    {/* Add more details as needed */}
+                  </ul>
+                </div>
+              </div>
             </div>
+
+            {/* a qualification_data component - left*/}
             <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">High School Diploma</h3>
+              <div
+                onClick={() => toggleModal("chungling")}
+                className="qualification__content-clickable">
+                <h3 className="qualification__title">
+                  High School Diploma (UEC)
+                </h3>
                 <span className="qualification__subtitle">
                   Chung Ling Private High School
                 </span>
@@ -153,41 +272,127 @@ const Qualification = () => {
                 <span className="qualification__line"></span>
               </div>
             </div>
+            {/* Modal */}
+            <div
+              className={
+                modalState === "chungling"
+                  ? "qualification__modal active-modal"
+                  : "qualification__modal"
+              }>
+              <div className="qualification__modal-content">
+                <i
+                  onClick={() => toggleModal(null)}
+                  className="uil uil-x qualification__modal-close"></i>
+
+                <div className="modal__header">
+                  <img
+                    src={ChungLing} // Replace with your logo path
+                    alt="Gamuda AI Academy Logo"
+                    className="company__logo"
+                  />
+                  <h3 className="qualification__modal-title">
+                    Business Analytics Undergraduate
+                  </h3>
+                </div>
+
+                <p className="qualification__modal-description">
+                  Details about the apprenticeship program at Gamuda AI Academy
+                </p>
+                <ul className="qualification__modal-details grid">
+                  <li className="qualification__modal-detail">
+                    <i className="uil uil-check-circle qualification__modal-icon"></i>
+                    <p className="qualification__modal-info">
+                      Developed AI solutions for real-world problems
+                    </p>
+                  </li>
+                  {/* Add more details as needed */}
+                </ul>
+              </div>
+            </div>
           </div>
+
           <div
             className={
               toggleState === 2
                 ? "qualification__content qualification__content-active"
                 : "qualification__content"
             }>
+            {/* a qualification_data component - right */}
             <div className="qualification__data">
               <div></div>
               <div>
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
               </div>
-              <div>
+              <div
+                onClick={() => toggleModal("ai_apprentice")}
+                className="qualification__content-clickable">
                 <h3 className="qualification__title">
-                  AI Software Engineer Intern
+                  Data Analysis & Big Data Analytics
                 </h3>
                 <span className="qualification__subtitle">
-                  Wholly Greens Pte. Ltd.
+                  University College London (UCL)
                 </span>
                 <div className="qualification__calendar">
                   <i className="uil uil-calendar-alt qualification__calendar-icon"></i>
-                  Jan 2024 - Jun 2024
+                  May 2024 - Aug 2024
+                </div>
+              </div>
+
+              {/* Modal */}
+              <div
+                className={
+                  modalState === "ai_apprentice"
+                    ? "qualification__modal active-modal"
+                    : "qualification__modal"
+                }>
+                <div className="qualification__modal-content">
+                  <i
+                    onClick={() => toggleModal(null)}
+                    className="uil uil-x qualification__modal-close"></i>
+
+                  <div className="modal__header">
+                    <img
+                      src="/path-to-your-logo.png" // Replace with your logo path
+                      alt="Gamuda AI Academy Logo"
+                      className="company__logo"
+                    />
+                    <h3 className="qualification__modal-title">
+                      Data Analysis & Big Data Analytics
+                    </h3>
+                  </div>
+
+                  <p className="qualification__modal-description">
+                    Details about the apprenticeship program at Gamuda AI
+                    Academy
+                  </p>
+                  <ul className="qualification__modal-details grid">
+                    <li className="qualification__modal-detail">
+                      <i className="uil uil-check-circle qualification__modal-icon"></i>
+                      <p className="qualification__modal-info">
+                        Developed AI solutions for real-world problems
+                      </p>
+                    </li>
+                    {/* Add more details as needed */}
+                  </ul>
                 </div>
               </div>
             </div>
+
+            {/* a qualification_data component - left*/}
             <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">Data Analyst Intern</h3>
+              <div
+                onClick={() => toggleModal("chungling")}
+                className="qualification__content-clickable">
+                <h3 className="qualification__title">
+                  High School Diploma (UEC)
+                </h3>
                 <span className="qualification__subtitle">
-                  Azure Tide Holdings Pte. Ltd.
+                  Chung Ling Private High School
                 </span>
                 <div className="qualification__calendar">
                   <i className="uil uil-calendar-alt qualification__calendar-icon"></i>
-                  Aug 2024 - Jan 2025
+                  Jan 2015 - Dec 2020
                 </div>
               </div>
               <div>
@@ -195,30 +400,127 @@ const Qualification = () => {
                 <span className="qualification__line"></span>
               </div>
             </div>
+            {/* Modal */}
+            <div
+              className={
+                modalState === "chungling"
+                  ? "qualification__modal active-modal"
+                  : "qualification__modal"
+              }>
+              <div className="qualification__modal-content">
+                <i
+                  onClick={() => toggleModal(null)}
+                  className="uil uil-x qualification__modal-close"></i>
+
+                <div className="modal__header">
+                  <img
+                    src={ChungLing} // Replace with your logo path
+                    alt="Gamuda AI Academy Logo"
+                    className="company__logo"
+                  />
+                  <h3 className="qualification__modal-title">
+                    Business Analytics Undergraduate
+                  </h3>
+                </div>
+
+                <p className="qualification__modal-description">
+                  Details about the apprenticeship program at Gamuda AI Academy
+                </p>
+                <ul className="qualification__modal-details grid">
+                  <li className="qualification__modal-detail">
+                    <i className="uil uil-check-circle qualification__modal-icon"></i>
+                    <p className="qualification__modal-info">
+                      Developed AI solutions for real-world problems
+                    </p>
+                  </li>
+                  {/* Add more details as needed */}
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div
+            className={
+              toggleState === 2
+                ? "qualification__content qualification__content-active"
+                : "qualification__content"
+            }>
+            {/* a qualification_data component - right */}
             <div className="qualification__data">
               <div></div>
               <div>
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
               </div>
-              <div>
-                <h3 className="qualification__title">Data Analytics Intern</h3>
-                <span className="qualification__subtitle">Continental AG</span>
-                <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt qualification__calendar-icon"></i>
-                  Jan 2024 - Jun 2024
-                </div>
-              </div>
-            </div>
-            <div className="qualification__data">
-              <div>
-                <h3 className="qualification__title">Data Science Intern</h3>
+              <div
+                onClick={() => toggleModal("ai_apprentice")}
+                className="qualification__content-clickable">
+                <h3 className="qualification__title">
+                  Data Analysis & Big Data Analytics
+                </h3>
                 <span className="qualification__subtitle">
-                  Jurong Town Corporation (JTC)
+                  University College London (UCL)
                 </span>
                 <div className="qualification__calendar">
                   <i className="uil uil-calendar-alt qualification__calendar-icon"></i>
-                  May 2023 - Aug 2023
+                  May 2024 - Aug 2024
+                </div>
+              </div>
+
+              {/* Modal */}
+              <div
+                className={
+                  modalState === "ai_apprentice"
+                    ? "qualification__modal active-modal"
+                    : "qualification__modal"
+                }>
+                <div className="qualification__modal-content">
+                  <i
+                    onClick={() => toggleModal(null)}
+                    className="uil uil-x qualification__modal-close"></i>
+
+                  <div className="modal__header">
+                    <img
+                      src="/path-to-your-logo.png" // Replace with your logo path
+                      alt="Gamuda AI Academy Logo"
+                      className="company__logo"
+                    />
+                    <h3 className="qualification__modal-title">
+                      Data Analysis & Big Data Analytics
+                    </h3>
+                  </div>
+
+                  <p className="qualification__modal-description">
+                    Details about the apprenticeship program at Gamuda AI
+                    Academy
+                  </p>
+                  <ul className="qualification__modal-details grid">
+                    <li className="qualification__modal-detail">
+                      <i className="uil uil-check-circle qualification__modal-icon"></i>
+                      <p className="qualification__modal-info">
+                        Developed AI solutions for real-world problems
+                      </p>
+                    </li>
+                    {/* Add more details as needed */}
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* a qualification_data component - left*/}
+            <div className="qualification__data">
+              <div
+                onClick={() => toggleModal("business_analytics")}
+                className="qualification__content-clickable">
+                <h3 className="qualification__title">
+                  BSc in Business Analytics
+                </h3>
+                <span className="qualification__subtitle">
+                  National University of Singapore (NUS)
+                </span>
+                <div className="qualification__calendar">
+                  <i className="uil uil-calendar-alt qualification__calendar-icon"></i>
+                  Aug 2021 - Dec 2025
                 </div>
               </div>
               <div>
@@ -226,20 +528,102 @@ const Qualification = () => {
                 <span className="qualification__line"></span>
               </div>
             </div>
+            {/* Modal */}
+            <div
+              className={
+                modalState === "business_analytics"
+                  ? "qualification__modal active-modal"
+                  : "qualification__modal"
+              }>
+              <div className="qualification__modal-content">
+                <i
+                  onClick={() => toggleModal(null)}
+                  className="uil uil-x qualification__modal-close"></i>
+
+                <div className="modal__header">
+                  <img
+                    src="/path-to-your-logo.png" // Replace with your logo path
+                    alt="Gamuda AI Academy Logo"
+                    className="company__logo"
+                  />
+                  <h3 className="qualification__modal-title">
+                    Business Analytics Undergraduate
+                  </h3>
+                </div>
+
+                <p className="qualification__modal-description">
+                  Details about the apprenticeship program at Gamuda AI Academy
+                </p>
+                <ul className="qualification__modal-details grid">
+                  <li className="qualification__modal-detail">
+                    <i className="uil uil-check-circle qualification__modal-icon"></i>
+                    <p className="qualification__modal-info">
+                      Developed AI solutions for real-world problems
+                    </p>
+                  </li>
+                  {/* Add more details as needed */}
+                </ul>
+              </div>
+            </div>
+
+            {/* a qualification_data component - right */}
             <div className="qualification__data">
               <div></div>
               <div>
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
               </div>
-              <div>
-                <h3 className="qualification__title">Teaching Assistant</h3>
+              <div
+                onClick={() => toggleModal("ai_apprentice")}
+                className="qualification__content-clickable">
+                <h3 className="qualification__title">
+                  Data Analysis & Big Data Analytics
+                </h3>
                 <span className="qualification__subtitle">
-                  National University of Singapore
+                  University College London (UCL)
                 </span>
                 <div className="qualification__calendar">
                   <i className="uil uil-calendar-alt qualification__calendar-icon"></i>
-                  Jan 2023 - Dec 2023
+                  May 2024 - Aug 2024
+                </div>
+              </div>
+
+              {/* Modal */}
+              <div
+                className={
+                  modalState === "ai_apprentice"
+                    ? "qualification__modal active-modal"
+                    : "qualification__modal"
+                }>
+                <div className="qualification__modal-content">
+                  <i
+                    onClick={() => toggleModal(null)}
+                    className="uil uil-x qualification__modal-close"></i>
+
+                  <div className="modal__header">
+                    <img
+                      src="/path-to-your-logo.png" // Replace with your logo path
+                      alt="Gamuda AI Academy Logo"
+                      className="company__logo"
+                    />
+                    <h3 className="qualification__modal-title">
+                      Data Analysis & Big Data Analytics
+                    </h3>
+                  </div>
+
+                  <p className="qualification__modal-description">
+                    Details about the apprenticeship program at Gamuda AI
+                    Academy
+                  </p>
+                  <ul className="qualification__modal-details grid">
+                    <li className="qualification__modal-detail">
+                      <i className="uil uil-check-circle qualification__modal-icon"></i>
+                      <p className="qualification__modal-info">
+                        Developed AI solutions for real-world problems
+                      </p>
+                    </li>
+                    {/* Add more details as needed */}
+                  </ul>
                 </div>
               </div>
             </div>

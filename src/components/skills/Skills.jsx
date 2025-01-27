@@ -8,7 +8,9 @@ const Skills = () => {
   return (
     <section className="skills section" id="skills">
       <h2 className="section__title">Skills</h2>
-      <span className="section__subtitle">Technical Level</span>
+      <span className="section__subtitle">
+        What I have Learnt Along the Journey
+      </span>
       <div className="skills__container container grid">
         <DataAnalysis />
         <DataScience />

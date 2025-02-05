@@ -386,9 +386,7 @@ const Qualification = () => {
               <div
                 onClick={() => toggleModal("wholly_green")}
                 className="qualification__content-clickable">
-                <h3 className="qualification__title">
-                  AI & Machine Learning Intern
-                </h3>
+                <h3 className="qualification__title">Data Scientist Intern</h3>
                 <span className="qualification__subtitle">
                   Wholly Greens Pte. Ltd.
                 </span>
@@ -422,7 +420,7 @@ const Qualification = () => {
                   </div>
 
                   <p className="qualification__modal-description">
-                    <strong>AI & Machine Learning Internship</strong>
+                    <strong>Data Scientist Intern</strong>
                   </p>
                   <ul className="qualification__modal-details grid">
                     <li className="qualification__modal-detail">

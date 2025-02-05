@@ -32,7 +32,7 @@ const DataScience = () => {
           <div className="skills__data">
             <i class="uil uil-arrow"></i>
             <div>
-              <h3 className="skills__name">Retriever Augmented Generation</h3>
+              <h3 className="skills__name">Retrieval-Augmented-Generation</h3>
               <span className="skills__level">Intermediate</span>
             </div>
           </div>

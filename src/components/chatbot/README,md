@@ -1,0 +1,63 @@
+# AI Chatbot Component
+
+This component adds an AI-powered chatbot to your personal website, allowing visitors to interact with an assistant that can answer questions about you and your work.
+
+## Features
+
+- Floating chat button in the bottom-right corner
+- Expandable chat interface with message history
+- Voice input support using the speech-to-text functionality
+- End conversation with feedback option
+- Responsive design for mobile and desktop
+
+## Setup Instructions
+
+1. **Copy Files**
+   - Ensure the `Chatbot.jsx` and `chatbot.css` files are in the `src/components/chatbot/` directory.
+
+2. **Speech Recognition**
+   - The SpeechRecorder component is included directly in the chatbot directory (`src/components/chatbot/speech-recorder.js`)
+   - No external script loading is required - it's imported as a regular module
+
+3. **Update App.js**
+   - Import the Chatbot component in your App.js:
+     ```js
+     import Chatbot from "./components/chatbot/Chatbot";
+     ```
+   - Add the component at the end of your App component:
+     ```jsx
+     <Chatbot />
+     ```
+
+4. **Backend Connection**
+   - The component uses the API configuration from `src/config/api.js`
+   - Update the `API_URL` in this file to match your backend server address
+   - The component expects the following API endpoints:
+     - POST `/chat` - For sending messages
+     - POST `/upload-audio` - For speech-to-text conversion
+     - POST `/end-conversation` - For ending the conversation
+   - To change deployment environment, just update the API_URL in the config file
+
+## Customization
+
+You can customize the appearance of the chatbot by modifying the `chatbot.css` file:
+
+- Change colors by updating the variables used (they inherit from your site's root variables)
+- Adjust the size of the chat window by modifying the width and height properties
+- Change the position by updating the right and bottom properties
+
+## Usage
+
+The chatbot provides a simple interface for users to:
+
+1. Click the chat button to open the interface
+2. Type questions or use voice input
+3. End the conversation and provide feedback
+4. Automatically sends conversation summary to your email (if configured in the backend)
+
+## Mobile Responsiveness
+
+The component is designed to be responsive across different screen sizes:
+- Full-width layout on small screens
+- Proper spacing and sizing on mobile devices
+- Touch-friendly buttons

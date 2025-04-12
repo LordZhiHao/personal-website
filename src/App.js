@@ -11,6 +11,7 @@ import Testimonials from "./components/testimonials/Testimonials";
 import Footer from "./components/footer/Footer";
 import ScrollUp from "./components/scrollup/ScrollUp";
 import Contact from "./components/contact/Contact";
+import Chatbot from "./components/chatbot/Chatbot";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       </main>
       <Footer />
       <ScrollUp />
+      <Chatbot />
     </div>
   );
 }

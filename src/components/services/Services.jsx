@@ -39,9 +39,9 @@ const Services = () => {
               <i
                 onClick={() => toggleTab(0)}
                 className="uil uil-x services__modal-close"></i>
-              <h3 className="services__modal-title">Developer</h3>
+              <h3 className="services__modal-title">Data Analysis</h3>
               <p className="services__modal-description">
-                Over 1 yeaer of experience in providing detailed insights and
+                Over 1 year of experience in providing detailed insights and
                 analysis for decision-making.
               </p>
               <ul className="services__modal-services grid">
@@ -92,7 +92,9 @@ const Services = () => {
               <i
                 onClick={() => toggleTab(0)}
                 className="uil uil-x services__modal-close"></i>
-              <h3 className="services__modal-title">Designer</h3>
+              <h3 className="services__modal-title">
+                Data Science & Machine Learning
+              </h3>
               <p className="services__modal-description">
                 Over 1 year of experience in delivering data science solutions
                 with a pecialization in Machine Learning and Analytics.
@@ -145,7 +147,9 @@ const Services = () => {
               <i
                 onClick={() => toggleTab(0)}
                 className="uil uil-x services__modal-close"></i>
-              <h3 className="services__modal-title">Branding</h3>
+              <h3 className="services__modal-title">
+                Developing Web Applications
+              </h3>
               <p className="services__modal-description">
                 Background in Computing Degree with multiple project experiences
                 in Web Development.
